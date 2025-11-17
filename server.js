@@ -42,8 +42,8 @@ app.post("/upload", upload.single("file"), async (req, res) => {
     return;
   }
 
-  // const image_link = `http://191.252.93.88/uploads/${req.file.filename}`;
-  const image_link = `http://191.252.93.88/uploads/1763387781249.png`;
+  const image_link = `http://191.252.93.88/uploads/${req.file.filename}`;
+  // const image_link = `http://191.252.93.88/uploads/1763387781249.png`;
 
   if (!image_link) {
     console.log("Imagem não fornecida");
